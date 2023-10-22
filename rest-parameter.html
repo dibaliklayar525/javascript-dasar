@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest Parameter</title>
+</head>
+<body>
+
+<script>
+
+<!--  Rest Parameter -->
+// fitur mengirim data sebanyak mungking pada satu parameter dan secara otomatis di konversi menjadi array
+// hanya boleh ada satu di function, tidak boleh lebih dari satu
+// hanya boleh berada di posisi paling akhir, tidak bileh di depan atau ditengah, kecuali cuma ada 1 parameter
+
+function sum(name, ...data){
+  let total = 0;
+  for (const item of data){
+    total += item;
+  }
+  console.info(`Total ${name} adalah ${total}`)
+}
+
+sum("iPhone", 2,3,4,5,6,7,8);
+
+</script>
+
+</body>
+</html>
