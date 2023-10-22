@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default Parameter</title>
+</head>
+<body>
+<script>
+
+<!--DEFAULT PARAMETER -->
+// Default parameter nya katakanlah "tidak ditemukan"
+
+function register(name, gender = "Tidak ditemukan"){
+    console.info(name);
+    console.info(gender);
+}
+
+register();
+
+register("meaghito")
+
+register("meaghito", "Laki-laki");
+
+</script>
+</body>
+</html>
