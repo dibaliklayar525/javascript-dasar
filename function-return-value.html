@@ -9,8 +9,49 @@
 <script>
 
 function sayHello(firstName, lastName){
-
+    const katakan = `Hello ${firstName} dan ${lastName}`;
+    return katakan;
 }
+
+const hasil = sayHello("Meaghito", "Rizki");
+
+document.writeln(`<p>${hasil}</p>`);
+
+// function return value lebih dari satu
+
+function getNilai(val){
+    if (val > 90){
+        return "A";
+    } else if(val > 80){
+        return  "B";
+    } else if(val > 70){
+        return "C";
+    } else if (val > 60) {
+        return "D";
+    } else {
+        return "E";
+    }
+}
+
+const nilai = getNilai(95);
+document.writeln(`<p>${nilai}</p>`);
+
+// iterasi
+
+function cekNilai(arr, searchVal){
+    for (const element of arr){
+        console.info(`Iterasi element ${element}`);
+        if(element === searchVal){
+            return true;
+        }
+    }
+    return false;
+}
+
+const array = [1,2,1314,32,423,423,42,342,312,31,24,345,456];
+const search = 1314;
+const found = cekNilai(array, search);
+document.writeln(`<p>${found}</p>`)
 
 </script>
 
