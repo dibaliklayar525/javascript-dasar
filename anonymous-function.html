@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anonymous Function</title>
+</head>
+<body>
+
+<script>
+
+    const say = function(name){
+        document.writeln(`<p>Hallo, ${name}</p>`)
+    }
+
+    say("meaghito");
+
+    function giveMeName(callback){
+        callback("Meaghito");
+    }
+
+    giveMeName(function(name){
+        document.writeln(`<p>Hi ${name}</p>`)
+    })
+
+</script>
+
+</body>
+</html>
